@@ -1,0 +1,432 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url(../assets/fonts/Satoshi/Satoshi-Regular.otf);
+}
+@font-face {
+  font-family: "Amazing Kids";
+  src: url(../assets/fonts/AmazingKids/AmazingKids.ttf);
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url(../assets/fonts/ClashDisplay/ClashDisplay-SemiBold.otf);
+}
+.landingPage {
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.landingPage .landingPage__main {
+  overflow-y: scroll;
+  box-sizing: border-box;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.landingPage .landingPage__main .landingPage__heroSection {
+  background-color: #004db3;
+  display: flex;
+  height: 85vh;
+  color: white;
+  padding: 30px 90px 0px 90px;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left h1 {
+  font-family: "Clash Display", sans-serif;
+  font-size: 3.8rem;
+  margin-top: 0rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left p {
+  width: 75%;
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-top: 20px;
+  opacity: 0.7;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-buttons {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-buttons button + button {
+  margin-left: 20px;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-buttons button {
+  height: 54px;
+  padding: 20px;
+  font-size: 0.8rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-buttons button:first-child {
+  background: none;
+  width: 216px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0.9;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-buttons button:first-child .fa-solid.fa-arrow-up {
+  rotate: 45deg;
+  margin-left: 10px;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-buttons button:nth-child(2) {
+  background: white;
+  width: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #004db3;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-previews {
+  margin-top: 20px;
+  width: 50%;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-previews .landingPage__heroSection-previews_Img {
+  position: relative;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-previews .landingPage__heroSection-previews_Img img {
+  position: absolute;
+  width: 64px;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-previews .landingPage__heroSection-previews_Img img:nth-child(1) {
+  left: 0;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-previews .landingPage__heroSection-previews_Img img:nth-child(2) {
+  left: 2.5rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-previews .landingPage__heroSection-previews_Img img:nth-child(3) {
+  left: 5rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-previews .landingPage__heroSection-previews_Img img:nth-child(4) {
+  left: 7.5rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-previews .landingPage__heroSection-previews_Img img:nth-child(5) {
+  left: 10rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-previews .landingPage__heroSection-previews_Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24%;
+  margin-left: 70%;
+  font-size: 0.9rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-previews .landingPage__heroSection-previews_Info h2 {
+  font-family: "Clash Display", sans-serif;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-left .landingPage__heroSection-previews .landingPage__heroSection-previews_Info span {
+  opacity: 0.8;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right {
+  position: relative;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right img {
+  position: absolute;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right #heroImage {
+  width: 620px;
+  bottom: 0;
+  left: 5rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right #vscodeIcon {
+  left: 36rem;
+  top: 3rem;
+  width: 80px;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right #bulbIcon {
+  top: 1rem;
+  left: 2rem;
+  width: 203.72px;
+  height: 186.74px;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right #figmaIcon {
+  bottom: 15rem;
+  width: 93.6px;
+  left: 2rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right #wordpressIcon {
+  bottom: 1.7rem;
+  width: 80px;
+  left: 38rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right #circleVector1 {
+  width: 25px;
+  top: 14rem;
+  left: 8rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right #circleVector2 {
+  width: 12px;
+  top: 5rem;
+  right: 40rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right #triangleVector {
+  width: 30px;
+  top: 16rem;
+  left: 39rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right #dotVector1 {
+  width: 10px;
+  top: 5rem;
+  right: 13rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right #dotVector2 {
+  width: 10px;
+  bottom: 6rem;
+  left: 6rem;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right #blueZigzagVector {
+  top: 23rem;
+  right: 46.5rem;
+  width: 50px;
+}
+.landingPage .landingPage__main .landingPage__heroSection .landingPage__heroSection-right #curlyArrowVector {
+  width: 140px;
+  bottom: 9rem;
+  left: -6rem;
+}
+.landingPage .landingPage__main .landingPage__mediaLinks {
+  display: flex;
+  background-color: #ccdbf0;
+}
+.landingPage .landingPage__main .landingPage__mediaLinks ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.landingPage .landingPage__main .landingPage__mediaLinks ul li {
+  padding: 2%;
+}
+.landingPage .landingPage__main .landingPage__classes {
+  display: flex;
+  height: 700px;
+  padding: 30px 90px;
+  background-color: #f8f9fc;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  padding: 0px 30px;
+  position: relative;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-left #twistVector {
+  position: absolute;
+  top: 6rem;
+  right: 48.5rem;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-left h1 {
+  font-family: "Clash Display", sans-serif;
+  width: 80%;
+  font-size: 50px;
+  line-height: 70px;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-left p {
+  opacity: 0.4;
+  text-transform: capitalize;
+  width: 70%;
+  line-height: 28px;
+  font-size: 14px;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-left button {
+  width: 140px;
+  height: 46px;
+  background-color: #004db3;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  margin-top: 20px;
+  padding: 10px;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-left .landingPage__classes-resources {
+  width: 80%;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-left .landingPage__classes-resources button {
+  background-color: white;
+  border-radius: 5px;
+  height: 60px;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  padding: 20px;
+  font-weight: bold;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-left .landingPage__classes-resources button img {
+  margin-right: 20px;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-left .landingPage__classes-resources button:first-child {
+  margin-right: 20px;
+  width: 212px;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-left .landingPage__classes-resources button:nth-child(2) {
+  margin-right: 20px;
+  width: 200px;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-left .landingPage__classes-resources button:nth-child(3) {
+  margin-right: 20px;
+  width: 231px;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-left .landingPage__classes-resources button:nth-child(4) {
+  width: 200px;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-right {
+  position: relative;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-right img {
+  position: absolute;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-right #mediaImage1 {
+  width: 606px;
+  top: 3rem;
+  left: -5rem;
+  z-index: 2;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-right #mediaImage2 {
+  width: 360px;
+  bottom: 4rem;
+  right: -7rem;
+  z-index: 3;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-right #enrolledStudents {
+  width: 200px;
+  top: 13rem;
+  right: 1rem;
+  z-index: 3;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-right #dropletsVector {
+  bottom: 8rem;
+  left: 23rem;
+  z-index: 1;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-right #greenZigzagVector {
+  top: 1rem;
+  left: 37.7rem;
+  z-index: 1;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-right #bigPurpleCircleVector {
+  bottom: 4rem;
+  left: 37.8rem;
+  z-index: 1;
+}
+.landingPage .landingPage__main .landingPage__classes .landingPage__classes-right #smallPurpleCircleVector {
+  bottom: 3rem;
+  left: 20rem;
+  z-index: 1;
+}
+.landingPage .landingPage__main .landingPage__offers {
+  display: flex;
+  height: 700px;
+  padding: 30px 90px;
+  background-color: #f8f9fc;
+}
+.landingPage .landingPage__main .landingPage__offers .landingPage__offers-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  position: relative;
+  margin-right: 40px;
+}
+.landingPage .landingPage__main .landingPage__offers .landingPage__offers-left h1 {
+  text-transform: capitalize;
+  font-family: "Clash Display", sans-serif;
+  width: 100%;
+  font-size: 46px;
+  line-height: 70px;
+}
+.landingPage .landingPage__main .landingPage__offers .landingPage__offers-left p {
+  opacity: 0.4;
+  text-transform: capitalize;
+  width: 85%;
+  line-height: 28px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.landingPage .landingPage__main .landingPage__offers .landingPage__offers-left #offersImage {
+  width: 605px;
+  margin-top: 40px;
+}
+.landingPage .landingPage__main .landingPage__offers .landingPage__offers-left #greenTriangleVector {
+  position: absolute;
+  bottom: 6rem;
+  left: -4rem;
+}
+.landingPage .landingPage__main .landingPage__offers .landingPage__offers-right {
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: 92%;
+  position: relative;
+}
+.landingPage .landingPage__main .landingPage__offers .landingPage__offers-right .landingPage__offers-right_card {
+  width: 260px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+.landingPage .landingPage__main .landingPage__offers .landingPage__offers-right .landingPage__offers-right_card img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.landingPage .landingPage__main .landingPage__offers .landingPage__offers-right .landingPage__offers-right_card h1 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.landingPage .landingPage__main .landingPage__offers .landingPage__offers-right .landingPage__offers-right_card p {
+  text-transform: capitalize;
+  opacity: 0.4;
+  line-height: 28px;
+  font-size: 12px;
+  width: 95%;
+}
+.landingPage .landingPage__main .landingPage__offers .landingPage__offers-right #yellowZigzagVector {
+  position: absolute;
+  top: -5rem;
+  right: 22rem;
+  width: 65px;
+}
+.landingPage .landingPage__main .landingPage__offers .landingPage__offers-right #purpleCircleVector {
+  position: absolute;
+  bottom: -4rem;
+  right: -4rem;
+}
+.landingPage .landingPage__main .landingPage__courses {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 90px;
+  background-color: #f8f9fc;
+}
+.landingPage .landingPage__main .landingPage__courses .landingPage__courses-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  width: 60%;
+}
+.landingPage .landingPage__main .landingPage__courses .landingPage__courses-heading h1 {
+  text-transform: capitalize;
+  font-family: "Clash Display", sans-serif;
+  width: 100%;
+  font-size: 48px;
+}
+.landingPage .landingPage__main .landingPage__courses .landingPage__courses-heading p {
+  opacity: 0.4;
+  text-transform: capitalize;
+  width: 75%;
+  line-height: 28px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.landingPage .landingPage__main::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}/*# sourceMappingURL=LandingPage.css.map */

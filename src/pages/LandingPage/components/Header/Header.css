@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url(../assets/fonts/Satoshi/Satoshi-Regular.otf);
+}
+@font-face {
+  font-family: "Amazing Kids";
+  src: url(../assets/fonts/AmazingKids/AmazingKids.ttf);
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url(../assets/fonts/ClashDisplay/ClashDisplay-SemiBold.otf);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #004db3;
+  position: sticky;
+  position: -webkit-sticky;
+  padding: 30px 90px;
+}
+.header .header__brand span {
+  font-family: "Amazing Kids", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+.header .header__actions {
+  display: flex;
+  align-items: center;
+}
+.header .header__actions nav + button {
+  margin-left: 40px;
+}
+.header .header__actions nav a + a {
+  margin-left: 20px;
+}
+.header .header__actions nav a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.header .header__actions nav a:active {
+  color: rgb(255, 255, 255);
+}
+.header .header__actions nav a:focus {
+  color: rgb(255, 255, 255);
+}
+.header .header__actions nav a .defaultFocus:link {
+  color: rgb(255, 255, 255);
+}
+.header .header__actions button {
+  padding: 15px;
+  width: 120px;
+  border-radius: 3px;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  color: #004db3;
+}/*# sourceMappingURL=Header.css.map */
