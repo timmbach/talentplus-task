@@ -1,1 +1,7 @@
-FROM node:17-alpine
+FROM node:alpine
+WORKDIR /client
+COPY package.json .
+RUN npm i
+COPY . .
+EXPOSE 3000
+CMD ["npm", "run", "dev"]
