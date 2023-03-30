@@ -3,10 +3,198 @@
   src: url(../assets/fonts/Satoshi/Satoshi-Regular.otf);
 }
 @font-face {
+  font-family: "Satoshi";
+  src: url(../assets/fonts/Satoshi/Satoshi-Bold.otf);
+  font-weight: bold;
+}
+@font-face {
   font-family: "Amazing Kids";
   src: url(../assets/fonts/AmazingKids/AmazingKids.ttf);
 }
 @font-face {
   font-family: "Clash Display";
   src: url(../assets/fonts/ClashDisplay/ClashDisplay-SemiBold.otf);
+}
+.footer {
+  padding: 10% 6%;
+  background-color: #000f24;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  gap: 6%;
+  margin: auto;
+}
+.footer div + div {
+  margin-left: 40px;
+}
+.footer nav {
+  display: flex;
+  flex-direction: column;
+}
+.footer nav a + a {
+  margin-top: 10px;
+}
+.footer nav a {
+  color: white;
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+.footer h1 {
+  font-family: "Clash Display", sans-serif;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 10% 3%;
+    background-color: #000f24;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: -moz-max-content;
+    height: max-content;
+    margin: auto;
+  }
+  .footer div + div {
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+  .footer nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer nav a + a {
+    margin-top: 10px;
+  }
+  .footer nav a {
+    color: white;
+    opacity: 0.8;
+    font-size: 1.1rem;
+  }
+  .footer h1 {
+    font-family: "Clash Display", sans-serif;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+}
+.footer .footer__brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footer .footer__brand span {
+  font-family: "Amazing Kids", sans-serif;
+  color: white;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+.footer .footer__brand p {
+  opacity: 0.8;
+  font-size: 16px;
+  width: 80%;
+}
+.footer .footer__brand .footer__socialIcons img + img {
+  margin-left: 10%;
+}
+.footer .footer__brand .footer__socialIcons img {
+  width: 30px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .footer .footer__brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer .footer__brand span {
+    font-family: "Amazing Kids", sans-serif;
+    color: white;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+  .footer .footer__brand p {
+    opacity: 0.8;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 80%;
+  }
+  .footer .footer__brand .footer__socialIcons {
+    margin-top: 10px;
+  }
+  .footer .footer__brand .footer__socialIcons img + img {
+    margin-left: 10%;
+  }
+  .footer .footer__brand .footer__socialIcons img {
+    width: 36px;
+    cursor: pointer;
+  }
+}
+.footer .footer__links {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+@media (max-width: 768px) {
+  .footer .footer__links {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+}
+.footer .footer__subscribe {
+  margin-bottom: 150px;
+}
+.footer .footer__subscribe .form-group {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+}
+.footer .footer__subscribe .form-group input {
+  padding: 7px;
+  border: 1px solid #004db3;
+  background-color: #2a2a2b;
+  width: 230px;
+  outline: none;
+  color: white;
+}
+.footer .footer__subscribe .form-group button {
+  padding: 7px;
+  background-color: #004db3;
+  color: white;
+  opacity: 0.8;
+  border: 1px solid #004db3;
+  border-left: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+@media (max-width: 768px) {
+  .footer .footer__subscribe .form-group {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  .footer .footer__subscribe .form-group input {
+    padding: 7px;
+    border: 1px solid #004db3;
+    background-color: #2a2a2b;
+    width: 350px;
+    outline: none;
+    color: white;
+    border-radius: 3px;
+  }
+  .footer .footer__subscribe .form-group button {
+    padding: 7px;
+    width: 180px;
+    background-color: #004db3;
+    color: white;
+    opacity: 0.8;
+    border: 1px solid #004db3;
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

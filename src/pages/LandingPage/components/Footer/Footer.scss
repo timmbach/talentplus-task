@@ -1,2 +1,184 @@
 @import "../../../../styles/fonts";
 @import "../../../../styles/colors";
+@import "../../../../styles/breakpoints";
+
+.footer {
+  padding: 10% 6%;
+  background-color: $secondary;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  gap: 6%;
+  margin: auto;
+  div + div {
+    margin-left: 40px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    a + a {
+      margin-top: 10px;
+    }
+    a {
+      color: white;
+      opacity: 0.8;
+      font-size: 1.1rem;
+    }
+  }
+  h1 {
+    font-family: $ClashDisplay;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+  @include media("<=tablet") {
+    padding: 10% 3%;
+    background-color: $secondary;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: max-content;
+    // gap: 6%;
+    margin: auto;
+    div + div {
+      margin-top: 40px;
+      margin-left: 0px;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      a + a {
+        margin-top: 10px;
+      }
+      a {
+        color: white;
+        opacity: 0.8;
+        font-size: 1.1rem;
+      }
+    }
+    h1 {
+      font-family: $ClashDisplay;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+  }
+  .footer__brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    span {
+      font-family: $AmazingKids;
+      color: white;
+      font-size: 3rem;
+      font-weight: lighter;
+    }
+    p {
+      opacity: 0.8;
+      font-size: 16px;
+      // margin-top: 10px;
+      width: 80%;
+    }
+    .footer__socialIcons {
+      img + img {
+        margin-left: 10%;
+      }
+      img {
+        width: 30px;
+        cursor: pointer;
+      }
+    }
+    @include media("<=tablet") {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      span {
+        font-family: $AmazingKids;
+        color: white;
+        font-size: 3rem;
+        font-weight: lighter;
+      }
+      p {
+        opacity: 0.8;
+        font-size: 20px;
+        margin-top: 20px;
+        width: 80%;
+      }
+      .footer__socialIcons {
+        margin-top: 10px;
+        img + img {
+          margin-left: 10%;
+        }
+        img {
+          width: 36px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    @include media("<=tablet") {
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+  }
+  .footer__subscribe {
+    margin-bottom: 150px;
+    .form-group {
+      display: flex;
+      justify-content: center;
+      width: 350px;
+      input {
+        padding: 7px;
+        border: 1px solid $primary;
+        background-color: $darkGrey;
+        width: 230px;
+        outline: none;
+        color: white;
+      }
+      button {
+        padding: 7px;
+        background-color: $primary;
+        color: white;
+        opacity: 0.8;
+        border: 1px solid $primary;
+        border-left: none;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+    }
+    @include media("<=tablet") {
+      .form-group {
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        height: 50px;
+        font-size: 1.2rem;
+        input {
+          padding: 7px;
+          border: 1px solid $primary;
+          background-color: $darkGrey;
+          width: 350px;
+          outline: none;
+          color: white;
+          border-radius: 3px;
+        }
+        button {
+          padding: 7px;
+          width: 180px;
+          background-color: $primary;
+          color: white;
+          opacity: 0.8;
+          border: 1px solid $primary;
+          border-left: none;
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+        }
+      }
+    }
+  }
+}

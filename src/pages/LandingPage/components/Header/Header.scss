@@ -1,53 +1,174 @@
 @import "../../../../styles/fonts";
 @import "../../../../styles/colors";
+@import "../../../../styles/breakpoints.scss";
 
 .header {
-  display: flex;
-  justify-content: space-between;
   background-color: $primary;
-  position: sticky;
+  position: fixed;
+  z-index: 44;
   position: -webkit-sticky;
+  width: 100%;
 
-  padding: 30px 90px;
-  .header__brand {
-    span {
-      font-family: $AmazingKids;
-      color: white;
-      font-size: 2.5rem;
-      font-weight: lighter;
+  .header__nav-desk {
+    padding: 30px 90px 5px 90px;
+    display: flex;
+    justify-content: space-between;
+    @include media("<=tablet") {
+      padding: 10px 30px 5px 30px;
+      margin-top: 20px;
+    }
+    .header__brand {
+      span {
+        font-family: $AmazingKids;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: lighter;
+        @include media("<=tablet") {
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    .header__actions-desk {
+      display: flex;
+      align-items: center;
+      .header__navIcons {
+        color: white;
+        font-weight: bold;
+        font-size: 1.6rem;
+        cursor: pointer;
+        @include media(">tablet") {
+          display: none;
+        }
+      }
+      button {
+        margin-left: 40px;
+      }
+      .header__desk_nav {
+        display: flex;
+        align-items: center;
+        a + a {
+          margin-left: 20px;
+        }
+        a {
+          font-weight: bold;
+          color: rgb(255, 255, 255, 0.5);
+          &:active {
+            color: rgb(255, 255, 255);
+          }
+          &:focus {
+            color: rgb(255, 255, 255);
+          }
+          .defaultFocus:link {
+            color: rgb(255, 255, 255);
+          }
+        }
+        @include media("<=tablet") {
+          display: none;
+        }
+      }
+      button {
+        padding: 15px;
+        width: 130px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        border: none;
+        background-color: white;
+        font-weight: bold;
+        color: $primary;
+      }
     }
   }
-  .header__actions {
+  .header__nav-mobile {
     display: flex;
-    align-items: center;
-    nav + button {
-      margin-left: 40px;
-    }
-    nav {
-      a + a {
-        margin-left: 20px;
-      }
-      a {
-        color: rgb(255, 255, 255, 0.5);
-        &:active {
-          color: rgb(255, 255, 255);
-        }
-        &:focus {
-          color: rgb(255, 255, 255);
-        }
-        .defaultFocus:link {
-          color: rgb(255, 255, 255);
+    flex-direction: column;
+    height: 70vh;
+    box-shadow: 0 0 10px 10px $lightBlue;
+
+    padding: 10px 30px 5px 30px;
+    background-color: rgba(189, 200, 222, 0.12);
+    .nav__top {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      .header__brand {
+        span {
+          font-family: $AmazingKids;
+          color: white;
+          font-size: 2.5rem;
+          font-weight: lighter;
         }
       }
+      .header__navIcons {
+        color: white;
+        font-weight: bold;
+        font-size: 2rem;
+        cursor: pointer;
+      }
     }
-    button {
-      padding: 15px;
-      width: 120px;
-      border-radius: 3px;
-      border: none;
-      background-color: white;
-      font-weight: bold;
-      color: $primary;
+    .nav__bottom {
+      // display: flex;
+      // flex-direction: column;
+      margin-top: 40px;
+      @include media("<=tablet") {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 55;
+        a + a {
+          margin-top: 10px;
+        }
+        a {
+          color: white;
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+        button {
+          width: 200px;
+          padding: 10px;
+          margin-top: 40px;
+          background-color: white;
+          color: $primary;
+          font-weight: bold;
+          border-radius: 5px;
+        }
+      }
     }
   }
 }
+
+///////////-- Mobile View --//////////////////
+// @media screen and (max-width: 600px) {
+//   .header {
+//     .header__actions-desk {
+//       .header__desk_nav {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+// .header {
+//   .header__actions-desk {
+//     nav {
+//       background: yellow;
+//       // The normal background color is set to yellow
+
+//       @include devices(tablet) {
+//         background: lightblue;
+//         // code set for tablet
+//       }
+
+//       @include devices(mobile) {
+//         background: aquamarine;
+//         h1 {
+//           color: red;
+//         }
+//         // code set for mobile
+//       }
+//     }
+//   }
+// }

@@ -3,6 +3,11 @@
   src: url(../assets/fonts/Satoshi/Satoshi-Regular.otf);
 }
 @font-face {
+  font-family: "Satoshi";
+  src: url(../assets/fonts/Satoshi/Satoshi-Bold.otf);
+  font-weight: bold;
+}
+@font-face {
   font-family: "Amazing Kids";
   src: url(../assets/fonts/AmazingKids/AmazingKids.ttf);
 }
@@ -11,47 +16,141 @@
   src: url(../assets/fonts/ClashDisplay/ClashDisplay-SemiBold.otf);
 }
 .header {
+  background-color: #004db3;
+  position: fixed;
+  z-index: 44;
+  position: -webkit-sticky;
+  width: 100%;
+}
+.header .header__nav-desk {
+  padding: 30px 90px 5px 90px;
   display: flex;
   justify-content: space-between;
-  background-color: #004db3;
-  position: sticky;
-  position: -webkit-sticky;
-  padding: 30px 90px;
 }
-.header .header__brand span {
+@media (max-width: 768px) {
+  .header .header__nav-desk {
+    padding: 10px 30px 5px 30px;
+    margin-top: 20px;
+  }
+}
+.header .header__nav-desk .header__brand span {
   font-family: "Amazing Kids", sans-serif;
   color: white;
   font-size: 2.5rem;
   font-weight: lighter;
 }
-.header .header__actions {
+@media (max-width: 768px) {
+  .header .header__nav-desk .header__brand span {
+    font-size: 1.6rem;
+  }
+}
+.header .header__nav-desk .header__actions-desk {
   display: flex;
   align-items: center;
 }
-.header .header__actions nav + button {
+.header .header__nav-desk .header__actions-desk .header__navIcons {
+  color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+@media (min-width: 769px) {
+  .header .header__nav-desk .header__actions-desk .header__navIcons {
+    display: none;
+  }
+}
+.header .header__nav-desk .header__actions-desk button {
   margin-left: 40px;
 }
-.header .header__actions nav a + a {
+.header .header__nav-desk .header__actions-desk .header__desk_nav {
+  display: flex;
+  align-items: center;
+}
+.header .header__nav-desk .header__actions-desk .header__desk_nav a + a {
   margin-left: 20px;
 }
-.header .header__actions nav a {
+.header .header__nav-desk .header__actions-desk .header__desk_nav a {
+  font-weight: bold;
   color: rgba(255, 255, 255, 0.5);
 }
-.header .header__actions nav a:active {
+.header .header__nav-desk .header__actions-desk .header__desk_nav a:active {
   color: rgb(255, 255, 255);
 }
-.header .header__actions nav a:focus {
+.header .header__nav-desk .header__actions-desk .header__desk_nav a:focus {
   color: rgb(255, 255, 255);
 }
-.header .header__actions nav a .defaultFocus:link {
+.header .header__nav-desk .header__actions-desk .header__desk_nav a .defaultFocus:link {
   color: rgb(255, 255, 255);
 }
-.header .header__actions button {
+@media (max-width: 768px) {
+  .header .header__nav-desk .header__actions-desk .header__desk_nav {
+    display: none;
+  }
+}
+.header .header__nav-desk .header__actions-desk button {
   padding: 15px;
-  width: 120px;
+  width: 130px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 3px;
   border: none;
   background-color: white;
   font-weight: bold;
   color: #004db3;
+}
+.header .header__nav-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  box-shadow: 0 0 10px 10px rgba(30, 93, 206, 0.2);
+  padding: 10px 30px 5px 30px;
+  background-color: rgba(189, 200, 222, 0.12);
+}
+.header .header__nav-mobile .nav__top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.header .header__nav-mobile .nav__top .header__brand span {
+  font-family: "Amazing Kids", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+.header .header__nav-mobile .nav__top .header__navIcons {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.header .header__nav-mobile .nav__bottom {
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .header .header__nav-mobile .nav__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 55;
+  }
+  .header .header__nav-mobile .nav__bottom a + a {
+    margin-top: 10px;
+  }
+  .header .header__nav-mobile .nav__bottom a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .header .header__nav-mobile .nav__bottom button {
+    width: 200px;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: white;
+    color: #004db3;
+    font-weight: bold;
+    border-radius: 5px;
+  }
 }/*# sourceMappingURL=Header.css.map */

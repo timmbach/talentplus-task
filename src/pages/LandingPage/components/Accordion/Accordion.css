@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url(../assets/fonts/Satoshi/Satoshi-Regular.otf);
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../assets/fonts/Satoshi/Satoshi-Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Amazing Kids";
+  src: url(../assets/fonts/AmazingKids/AmazingKids.ttf);
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url(../assets/fonts/ClashDisplay/ClashDisplay-SemiBold.otf);
+}
+.accordion__content {
+  border-bottom: 1px solid #eaeaea;
+}
+.accordion__content .accordion__header,
+.accordion__content .accordion__description {
+  padding: 20px 0px;
+  display: flex;
+  border-radius: 6px;
+  width: inherit;
+  background-color: inherit;
+}
+.accordion__content .accordion__description {
+  padding: 0px 0px;
+  opacity: 0.5;
+}
+.accordion__content .accordion__header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion__content .accordion__header span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.accordion__content .accordion__header i {
+  margin: 0px 0px;
+}
+@media (max-width: 768px) {
+  .accordion__content {
+    border-bottom: 1px solid #eaeaea;
+    width: 100%;
+  }
+  .accordion__content .accordion__header,
+  .accordion__content .accordion__description {
+    padding: 20px 0px;
+    display: flex;
+    border-radius: 6px;
+    width: 100%;
+    background-color: inherit;
+  }
+  .accordion__content .accordion__description {
+    padding: 0px 0px;
+    opacity: 0.5;
+    font-size: 0.68rem;
+  }
+  .accordion__content .accordion__header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .accordion__content .accordion__header span {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .accordion__content .accordion__header i {
+    margin: 0px 0px;
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=Accordion.css.map */

@@ -1,0 +1,39 @@
+@import "../../../../styles/fonts";
+@import "../../../../styles/colors";
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+.testimonial__container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 500px;
+  border-radius: 20px;
+  p {
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    opacity: 0.4;
+  }
+  .testimonial__client {
+    display: flex;
+    align-items: center;
+    img {
+    }
+    .testimonial__client-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 10px;
+      padding-top: 10px;
+      p:first-child {
+        font-weight: bold;
+        line-height: 0.5;
+        opacity: 1;
+      }
+      p:nth-child(2) {
+        opacity: 0.4;
+        line-height: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../../../styles/fonts";
+@import "../../../../styles/colors";
+@import "../../../../styles/breakpoints";
+
+.accordion__content {
+  border-bottom: 1px solid $veryLightGrey;
+  .accordion__header,
+  .accordion__description {
+    // margin-bottom: 20px;
+    padding: 20px 0px;
+    display: flex;
+    border-radius: 6px;
+    width: inherit;
+    background-color: inherit;
+  }
+  .accordion__description {
+    padding: 0px 0px;
+    opacity: 0.5;
+  }
+  .accordion__header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+    i {
+      margin: 0px 0px;
+    }
+  }
+
+  @include media("<=tablet") {
+    border-bottom: 1px solid $veryLightGrey;
+    width: 100%;
+    .accordion__header,
+    .accordion__description {
+      // margin-bottom: 20px;
+      padding: 20px 0px;
+      display: flex;
+      border-radius: 6px;
+      width: 100%;
+      background-color: inherit;
+    }
+    .accordion__description {
+      padding: 0px 0px;
+      opacity: 0.5;
+      font-size: 0.68rem;
+    }
+    .accordion__header {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-weight: bold;
+        font-size: 1rem;
+      }
+      i {
+        margin: 0px 0px;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
