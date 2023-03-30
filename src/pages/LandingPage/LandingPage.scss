@@ -44,6 +44,9 @@
           position: absolute;
           top: 5rem;
           left: 2rem;
+          @include media("<=tablet") {
+            display: none;
+          }
         }
         @include media("<=tablet") {
           width: 100%;
@@ -299,7 +302,7 @@
           width: 10px;
           position: absolute;
           top: 5rem;
-          right: 13rem;
+          left: -8rem;
         }
         #dotVector2 {
           width: 10px;
