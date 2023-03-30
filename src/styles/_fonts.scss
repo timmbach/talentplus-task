@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/clash-display");
+
 @font-face {
   font-family: "Satoshi";
   src: url(../assets/fonts/Satoshi/Satoshi-Regular.otf);
@@ -11,10 +13,10 @@
   font-family: "Amazing Kids";
   src: url(../assets/fonts/AmazingKids/AmazingKids.ttf);
 }
-@font-face {
-  font-family: "Clash Display";
-  src: url(../assets/fonts/ClashDisplay/ClashDisplay-SemiBold.otf);
-}
+// @font-face {
+//   font-family: "Clash Display";
+//   src: url(../assets/fonts/ClashDisplay/ClashDisplay-SemiBold.otf);
+// }
 
 $Satoshi: "Satoshi", sans-serif;
 $AmazingKids: "Amazing Kids", sans-serif;

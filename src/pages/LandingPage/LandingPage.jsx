@@ -294,7 +294,7 @@ const LandingPage = () => {
             </article>
             <article className="landingPage__offers-right_card">
               <img src="src/assets/images/icons/meetingsIcon.png" alt="icon" />
-              <h1>Experienced Mentors</h1>
+              <h1>One-On-One Meetings</h1>
               <p>
                 high-definition video is video of higher resolution and quality
                 than standard definition. high-defination video is video of
@@ -306,7 +306,7 @@ const LandingPage = () => {
                 src="src/assets/images/icons/multipleMeetingsIcon.png"
                 alt="icon"
               />
-              <h1>Experienced Mentors</h1>
+              <h1>One-On-One Meetings</h1>
               <p>
                 high-definition video is video of higher resolution and quality
                 than standard definition. high-defination video is video of
