@@ -24,6 +24,7 @@ import dropletsVector from "../../assets/vectors/droplets.png";
 import greenZigzagVector from "../../assets/vectors/greenZigzag.png";
 import largePurpleCircle from "../../assets/vectors/largePurpleCircle.png";
 import smallPurpleCircle from "../../assets/vectors/smallPurpleCircle.png";
+import crossVector from "../../assets/vectors/crossVector.png";
 //  images
 import user1 from "../../assets/images/user-1.png";
 import user2 from "../../assets/images/user-2.png";
