@@ -8,6 +8,31 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Accordion from "./components/Accordion/Accordion";
+import Bluezigzag from "../../assets/vectors/blueZigzag.png";
+import GreenCircle from "../../assets/vectors/green-circle.png";
+import triangleVector from "../../assets/vectors/triangle.png";
+import yellowDotVector from "../../assets/vectors/yellow-dot.png";
+import curlyArrow from "../../assets/vectors/curly-arrow.png";
+import greenTriangle from "../../assets/vectors/greenTriangle.png";
+import yellowZigzag from "../../assets/vectors/yellowZigzag.png";
+import purpleCircle from "../../assets/vectors/purpleCircle.png";
+import leftBlob from "../../assets/vectors/leftBlob.png";
+import rightBlob from "../../assets/vectors/rightBlob.png";
+import user1 from "../../assets/images/user-1.png";
+import user2 from "../../assets/images/user-2.png";
+import user3 from "../../assets/images/user-3.png";
+import user4 from "../../assets/images/user-4.png";
+import user5 from "../../assets/images/user-5.png";
+import heroImage from "../../assets/images/hero-image.png";
+import offersImage from "../../assets/images/offersImage.png";
+import lightBulb from "../../assets/images/light-bulb.png";
+import figmaIcon from "../../assets/images/icons/figma.png";
+import wordpressIcon from "../../assets/images/icons/wordpress.png";
+import vscodeIcon from "../../assets/images/icons/vscode.png";
+import mentorsIcon from "../../assets/images/icons/mentorsIcon.png";
+import meetingsIcon from "../../assets/images/icons/meetingsIcon.png";
+import multipleMeetingsIcon from "../../assets/images/icons/multipleMeetingsIcon.png";
+import pricesIcon from "../../assets/images/icons/pricesIcon.png";
 
 const accordions = [
   {
@@ -76,16 +101,8 @@ const LandingPage = () => {
       <main className="landingPage__main">
         <section id="home" className="landingPage__heroSection">
           <article className="landingPage__heroSection-left">
-            <img
-              id="blueZigzagVector"
-              src="src/assets/vectors/blueZigzag.png"
-              alt="zigzag"
-            />
-            <img
-              id="circleVector2"
-              src="src/assets/vectors/green-circle.png"
-              alt="circle vector"
-            />
+            <img id="blueZigzagVector" src={Bluezigzag} alt="zigzag" />
+            <img id="circleVector2" src={GreenCircle} alt="circle vector" />
             <h1>Grow your skills to advance your career path</h1>
             <p>
               Build Your Future with our quality education. the best and largest
@@ -100,11 +117,11 @@ const LandingPage = () => {
             </div>
             <div className="landingPage__heroSection-previews">
               <div className="landingPage__heroSection-previews_Img">
-                <img src="src/assets/images/user-1.png" alt="random user img" />
-                <img src="src/assets/images/user-2.png" alt="random user img" />
-                <img src="src/assets/images/user-3.png" alt="random user img" />
-                <img src="src/assets/images/user-4.png" alt="random user img" />
-                <img src="src/assets/images/user-5.png" alt="random user img" />
+                <img src={user1} alt="random user img" />
+                <img src={user2} alt="random user img" />
+                <img src={user3} alt="random user img" />
+                <img src={user4} alt="random user img" />
+                <img src={user5} alt="random user img" />
               </div>
               <div className="landingPage__heroSection-previews_Info">
                 <h2>255k+</h2>
@@ -113,58 +130,22 @@ const LandingPage = () => {
             </div>
           </article>
           <div className="landingPage__heroSection-right">
-            <img
-              id="heroImage"
-              src="src/assets/images/hero-image.png"
-              alt="hero image"
-            />
-            <img
-              id="vscodeIcon"
-              src="src/assets/images/icons/vscode.png"
-              alt="vscode icon"
-            />
-            <img
-              id="bulbIcon"
-              src="src/assets/images/light-bulb.png"
-              alt="bulb icon"
-            />
-            <img
-              id="figmaIcon"
-              src="src/assets/images/icons/figma.png"
-              alt="figma icon"
-            />
-            <img
-              id="wordpressIcon"
-              src="src/assets/images/icons/wordpress.png"
-              alt="wordpress icon"
-            />
-            <img
-              id="circleVector1"
-              src="src/assets/vectors/green-circle.png"
-              alt="circle vector"
-            />
+            <img id="heroImage" src={heroImage} alt="hero image" />
+            <img id="vscodeIcon" src={vscodeIcon} alt="vscode icon" />
+            <img id="bulbIcon" src={lightBulb} alt="bulb icon" />
+            <img id="figmaIcon" src={figmaIcon} alt="figma icon" />
+            <img id="wordpressIcon" src={wordpressIcon} alt="wordpress icon" />
+            <img id="circleVector1" src={GreenCircle} alt="circle vector" />
 
             <img
               id="triangleVector"
-              src="src/assets/vectors/triangle.png"
+              src={triangleVector}
               alt="triangle vector"
             />
-            <img
-              id="dotVector1"
-              src="src/assets/vectors/yellow-dot.png"
-              alt="yellow dot"
-            />
-            <img
-              id="dotVector2"
-              src="src/assets/vectors/yellow-dot.png"
-              alt="yellow dot"
-            />
+            <img id="dotVector1" src={yellowDotVector} alt="yellow dot" />
+            <img id="dotVector2" src={yellowDotVector} alt="yellow dot" />
 
-            <img
-              id="curlyArrowVector"
-              src="src/assets/vectors/curly-arrow.png"
-              alt="curly arrow"
-            />
+            <img id="curlyArrowVector" src={curlyArrow} alt="curly arrow" />
           </div>
         </section>
         <section className="landingPage__mediaLinks">
@@ -271,20 +252,12 @@ const LandingPage = () => {
               than standard definition. while there’s no standard meaning for
               high definition, generally any standard video image
             </p>
-            <img
-              id="offersImage"
-              src="src/assets/images/offersImage.png"
-              alt="image"
-            />
-            <img
-              id="greenTriangleVector"
-              src="src/assets/vectors/greenTriangle.png"
-              alt="img"
-            />
+            <img id="offersImage" src={offersImage} alt="image" />
+            <img id="greenTriangleVector" src={greenTriangle} alt="img" />
           </article>
           <div className="landingPage__offers-right">
             <article className="landingPage__offers-right_card">
-              <img src="src/assets/images/icons/mentorsIcon.png" alt="icon" />
+              <img src={mentorsIcon} alt="icon" />
               <h1>Experienced Mentors</h1>
               <p>
                 high-definition video is video of higher resolution and quality
@@ -293,7 +266,7 @@ const LandingPage = () => {
               </p>
             </article>
             <article className="landingPage__offers-right_card">
-              <img src="src/assets/images/icons/meetingsIcon.png" alt="icon" />
+              <img src={meetingsIcon} alt="icon" />
               <h1>One-On-One Meetings</h1>
               <p>
                 high-definition video is video of higher resolution and quality
@@ -302,10 +275,7 @@ const LandingPage = () => {
               </p>
             </article>
             <article className="landingPage__offers-right_card">
-              <img
-                src="src/assets/images/icons/multipleMeetingsIcon.png"
-                alt="icon"
-              />
+              <img src={multipleMeetingsIcon} alt="icon" />
               <h1>One-On-One Meetings</h1>
               <p>
                 high-definition video is video of higher resolution and quality
@@ -314,7 +284,7 @@ const LandingPage = () => {
               </p>
             </article>
             <article className="landingPage__offers-right_card">
-              <img src="src/assets/images/icons/pricesIcon.png" alt="icon" />
+              <img src={pricesIcon} alt="icon" />
               <h1>Experienced Mentors</h1>
               <p>
                 high-definition video is video of higher resolution and quality
@@ -322,16 +292,8 @@ const LandingPage = () => {
                 higher resolution and quality than standard definition.
               </p>
             </article>
-            <img
-              id="yellowZigzagVector"
-              src="src/assets/vectors/yellowZigzag.png"
-              alt="icon"
-            />
-            <img
-              id="purpleCircleVector"
-              src="src/assets/vectors/purpleCircle.png"
-              alt="icon"
-            />
+            <img id="yellowZigzagVector" src={yellowZigzag} alt="icon" />
+            <img id="purpleCircleVector" src={purpleCircle} alt="icon" />
           </div>
         </section>
         <section id="courses" className="landingPage__courses">
@@ -456,31 +418,11 @@ const LandingPage = () => {
               <Accordion key={index} accordion={accordion} />
             ))}
           </div>
-          <img
-            id="leftBlobVector"
-            src="src/assets/vectors/leftBlob.png"
-            alt=""
-          />
-          <img
-            id="rightBlobVector"
-            src="src/assets/vectors/rightBlob.png"
-            alt=""
-          />
-          <img
-            id="yellowZigzagVector2"
-            src="src/assets/vectors/yellowZigzag.png"
-            alt=""
-          />
-          <img
-            id="purpleCircleVector2"
-            src="src/assets/vectors/purpleCircle.png"
-            alt=""
-          />
-          <img
-            id="yellowDotVector2"
-            src="src/assets/vectors/yellow-dot.png"
-            alt=""
-          />
+          <img id="leftBlobVector" src={leftBlob} alt="" />
+          <img id="rightBlobVector" src={rightBlob} alt="" />
+          <img id="yellowZigzagVector2" src={yellowZigzag} alt="" />
+          <img id="purpleCircleVector2" src={purpleCircle} alt="" />
+          <img id="yellowDotVector2" src={yellowDotVector} alt="" />
         </section>
       </main>
       <Footer />

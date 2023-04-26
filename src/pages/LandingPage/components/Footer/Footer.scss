@@ -3,13 +3,13 @@
 @import "../../../../styles/breakpoints";
 
 .footer {
-  padding: 10% 6%;
+  padding: 10% 4%;
   background-color: $secondary;
   color: white;
   display: flex;
   justify-content: center;
   height: 80vh;
-  gap: 6%;
+  gap: 3%;
   margin: auto;
   div + div {
     margin-left: 40px;
@@ -62,7 +62,7 @@
       font-family: $ClashDisplay;
       margin-bottom: 20px;
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
   .footer__brand {
