@@ -8,6 +8,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Accordion from "./components/Accordion/Accordion";
+// vectors
 import Bluezigzag from "../../assets/vectors/blueZigzag.png";
 import GreenCircle from "../../assets/vectors/green-circle.png";
 import triangleVector from "../../assets/vectors/triangle.png";
@@ -18,6 +19,12 @@ import yellowZigzag from "../../assets/vectors/yellowZigzag.png";
 import purpleCircle from "../../assets/vectors/purpleCircle.png";
 import leftBlob from "../../assets/vectors/leftBlob.png";
 import rightBlob from "../../assets/vectors/rightBlob.png";
+import twistVector from "../../assets/vectors/twist.png";
+import dropletsVector from "../../assets/vectors/droplets.png";
+import greenZigzagVector from "../../assets/vectors/greenZigzag.png";
+import largePurpleCircle from "../../assets/vectors/largePurpleCircle.png";
+import smallPurpleCircle from "../../assets/vectors/smallPurpleCircle.png";
+//  images
 import user1 from "../../assets/images/user-1.png";
 import user2 from "../../assets/images/user-2.png";
 import user3 from "../../assets/images/user-3.png";
@@ -26,11 +33,25 @@ import user5 from "../../assets/images/user-5.png";
 import heroImage from "../../assets/images/hero-image.png";
 import offersImage from "../../assets/images/offersImage.png";
 import lightBulb from "../../assets/images/light-bulb.png";
+import mediaImage1 from "../../assets/images/mediaImage1.png";
+import enrolledStudents from "../../assets/images/enrolledStudents.png";
+import mediaImage2 from "../../assets/images/mediaImage2.png";
+import worldConnectImage from "../../assets/images/worldConnectImage.png";
+// icons
 import figmaIcon from "../../assets/images/icons/figma.png";
 import wordpressIcon from "../../assets/images/icons/wordpress.png";
 import vscodeIcon from "../../assets/images/icons/vscode.png";
 import mentorsIcon from "../../assets/images/icons/mentorsIcon.png";
 import meetingsIcon from "../../assets/images/icons/meetingsIcon.png";
+import zoomIcon from "../../assets/images/icons/zoom.png";
+import stripeIcon from "../../assets/images/icons/stripe.png";
+import mondayIcon from "../../assets/images/icons/monday.png";
+import slackIcon from "../../assets/images/icons/slack.png";
+import dropboxIcon from "../../assets/images/icons/Dropbox.png";
+import audioIcon from "../../assets/images/icons/audioIcon.png";
+import streamIcon from "../../assets/images/icons/streamIcon.png";
+import recordIcon from "../../assets/images/icons/recordIcon.png";
+import notesIcon from "../../assets/images/icons/notesIcon.png";
 import multipleMeetingsIcon from "../../assets/images/icons/multipleMeetingsIcon.png";
 import pricesIcon from "../../assets/images/icons/pricesIcon.png";
 
@@ -152,27 +173,27 @@ const LandingPage = () => {
           <ul>
             <li>
               <a target="_blank" href="https://zoom.us/">
-                <img src="src/assets/images/icons/zoom.png" alt="zoom" />
+                <img src={zoomIcon} alt="zoom" />
               </a>
             </li>
             <li>
               <a target="_blank" href="https://stripe.com/">
-                <img src="src/assets/images/icons/stripe.png" alt="stripe" />
+                <img src={stripeIcon} alt="stripe" />
               </a>
             </li>
             <li>
               <a target="_blank" href="https://monday.com/">
-                <img src="src/assets/images/icons/monday.png" alt="monday" />
+                <img src={mondayIcon} alt="monday" />
               </a>
             </li>
             <li>
               <a target="_blank" href="https://slack.com/">
-                <img src="src/assets/images/icons/slack.png" alt="slack" />
+                <img src={slackIcon} alt="slack" />
               </a>
             </li>
             <li>
               <a target="_blank" href="https://www.dropbox.com/">
-                <img src="src/assets/images/icons/Dropbox.png" alt="dropbox" />
+                <img src={dropboxIcon} alt="dropbox" />
               </a>
             </li>
           </ul>
@@ -188,60 +209,28 @@ const LandingPage = () => {
             <button>View Courses</button>
             <div className="landingPage__classes-resources">
               <button>
-                <img src="src/assets/images/icons/audioIcon.png" alt="img" />{" "}
-                Audio Classes
+                <img src={audioIcon} alt="img" /> Audio Classes
               </button>
               <button>
-                <img src="src/assets/images/icons/streamIcon.png" alt="img" />{" "}
-                Live Classes
+                <img src={streamIcon} alt="img" /> Live Classes
               </button>
               <button>
-                <img src="src/assets/images/icons/recordIcon.png" alt="img" />{" "}
-                Recorded Classes
+                <img src={recordIcon} alt="img" /> Recorded Classes
               </button>
               <button>
-                <img src="src/assets/images/icons/notesIcon.png" alt="img" />{" "}
-                50+ Notes
+                <img src={notesIcon} alt="img" /> 50+ Notes
               </button>
             </div>
           </article>
-          <img id="twistVector" src="src/assets/vectors/twist.png" alt="img" />
-          <img
-            id="dropletsVector"
-            src="src/assets/vectors/droplets.png"
-            alt="img"
-          />
-          <img
-            id="greenZigzagVector"
-            src="src/assets/vectors/greenZigzag.png"
-            alt="img"
-          />
-          <img
-            id="bigPurpleCircleVector"
-            src="src/assets/vectors/largePurpleCircle.png"
-            alt="img"
-          />
-          <img
-            id="smallPurpleCircleVector"
-            src="src/assets/vectors/smallPurpleCircle.png"
-            alt="img"
-          />
+          <img id="twistVector" src={twistVector} alt="img" />
+          <img id="dropletsVector" src={dropletsVector} alt="img" />
+          <img id="greenZigzagVector" src={greenZigzagVector} alt="img" />
+          <img id="bigPurpleCircleVector" src={largePurpleCircle} alt="img" />
+          <img id="smallPurpleCircleVector" src={smallPurpleCircle} alt="img" />
           <div className="landingPage__classes-right">
-            <img
-              id="mediaImage1"
-              src="src/assets/images/mediaImage1.png"
-              alt="img"
-            />
-            <img
-              id="enrolledStudents"
-              src="src/assets/images/enrolledStudents.png"
-              alt="img"
-            />
-            <img
-              id="mediaImage2"
-              src="src/assets/images/mediaImage2.png"
-              alt="img"
-            />
+            <img id="mediaImage1" src={mediaImage1} alt="img" />
+            <img id="enrolledStudents" src={enrolledStudents} alt="img" />
+            <img id="mediaImage2" src={mediaImage2} alt="img" />
           </div>
         </section>
         <section id="about-us" className="landingPage__offers">
@@ -304,11 +293,7 @@ const LandingPage = () => {
               than standard definition. while there’s no standard meaning for
               high definition, generally any standard video image
             </p>
-            <img
-              id="crossVector"
-              src="src/assets/vectors/crossVector.png"
-              alt="icon"
-            />
+            <img id="crossVector" src={crossVector} alt="icon" />
           </header>
           <div className="landingPage__courses-categories">
             <button
@@ -400,7 +385,7 @@ const LandingPage = () => {
               Are you ready to connect with the future talent od the tech world
             </h1>
             <p>Meet Up With Other Techstars And Grow Together</p>
-            <img src="src/assets/images/worldConnectImage.png" alt="img" />
+            <img src={worldConnectImage} alt="img" />
             <button>Join Our Community</button>
           </article>
         </section>
